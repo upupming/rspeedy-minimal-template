@@ -1,9 +1,12 @@
-import { useCallback, useEffect, useState } from '@lynx-js/react'
+import { lazy, Suspense, useCallback, useEffect, useState } from '@lynx-js/react'
 
 import './App.css'
 import arrow from './assets/arrow.png'
 import lynxLogo from './assets/lynx-logo.png'
 import reactLynxLogo from './assets/react-logo.png'
+import Sub from './subdir/index.jsx'
+
+const Foo = lazy(() => import('./Foo.jsx'))
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false)
@@ -19,6 +22,10 @@ export function App() {
 
   return (
     <view>
+      <Suspense>
+        <Foo />
+      </Suspense>
+      <Sub />
       <view className='Background' />
       <view className='App'>
         <view className='Banner'>

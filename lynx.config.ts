@@ -4,6 +4,11 @@ import { pluginQRCode } from '@lynx-js/qrcode-rsbuild-plugin'
 import { pluginReactLynx } from '@lynx-js/react-rsbuild-plugin'
 
 export default defineConfig({
+  source: {
+    alias: {
+      '@': './src',
+    }
+  },
   plugins: [
     pluginQRCode({
       schema(url) {
