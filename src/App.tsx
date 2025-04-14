@@ -4,6 +4,7 @@ import './App.css'
 import arrow from './assets/arrow.png'
 import lynxLogo from './assets/lynx-logo.png'
 import reactLynxLogo from './assets/react-logo.png'
+import './bg.js'
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false)
