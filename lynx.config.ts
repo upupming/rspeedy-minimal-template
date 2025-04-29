@@ -4,6 +4,10 @@ import { pluginQRCode } from '@lynx-js/qrcode-rsbuild-plugin'
 import { pluginReactLynx } from '@lynx-js/react-rsbuild-plugin'
 
 export default defineConfig({
+  // output: {
+  //   filenameHash: 'contenthash:8',
+  //   minify: false,
+  // },
   plugins: [
     pluginQRCode({
       schema(url) {
