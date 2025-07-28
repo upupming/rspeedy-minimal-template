@@ -19,7 +19,7 @@ export function App() {
 
   return (
     <view>
-      <view className='Background' />
+      <view className='Background flex-col' />
       <view className='App'>
         <view className='Banner'>
           <view className='Logo' bindtap={onTap}>
