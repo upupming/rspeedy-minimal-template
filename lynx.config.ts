@@ -19,4 +19,9 @@ export default defineConfig({
       enableRemoveCSSScope: false
     }),
   ],
+  output: {
+    minify: {
+      css: false
+    }
+  }
 })

@@ -1,9 +1,7 @@
 import { useCallback, useEffect, useState } from '@lynx-js/react';
+import Foo from './Foo.jsx'
 
 import './App.css';
-import arrow from './assets/arrow.png';
-import lynxLogo from './assets/lynx-logo.png';
-import reactLynxLogo from './assets/react-logo.png';
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
@@ -18,35 +16,14 @@ export function App() {
   }, [alterLogo]);
 
   return (
-    <view>
-      <view className='Background flex-col' />
-      <view className='App'>
-        <view className='Banner'>
-          <view className='Logo' bindtap={onTap}>
-            {alterLogo
-              ? <image src={reactLynxLogo} className='Logo--react' />
-              : <image src={lynxLogo} className='Logo--lynx' />}
-          </view>
-          <text className='Title'>React</text>
-          <text className='Subtitle'>on Lynx</text>
-        </view>
-        <view className='Content'>
-          <image src={arrow} className='Arrow' />
-          <text className='Description'>Tap the logo and have fun!</text>
-          <text className='Hint'>
-            Edit<text
-              style={{
-                fontStyle: 'italic',
-                color: 'rgba(255, 255, 255, 0.85)',
-              }}
-            >
-              {' src/App.tsx '}
-            </text>
-            to see updates!
-          </text>
-        </view>
-        <view style={{ flex: 1 }}></view>
-      </view>
+    <view style={{
+      padding: '48px',
+      backgroundColor: '#fff',
+      width: '100%',
+      height: '100%'
+    }}>
+      <text className='text-black'>Hello, ReactLynx</text>
+      <Foo/>
     </view>
   );
 }
