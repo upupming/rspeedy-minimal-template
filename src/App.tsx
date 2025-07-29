@@ -22,7 +22,7 @@ export function App() {
       width: '100%',
       height: '100%'
     }}>
-      <text className='text-black'>Hello, ReactLynx</text>
+      <text className='text-black bg-white'>Hello, ReactLynx</text>
       <Foo/>
     </view>
   );

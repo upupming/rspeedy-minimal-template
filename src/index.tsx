@@ -1,3 +1,4 @@
+import '@lynx-js/preact-devtools'
 import 'tailwindcss/utilities.css?common';
 import '@lynx-js/react/experimental/lazy/import';
 import { root } from '@lynx-js/react'
