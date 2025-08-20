@@ -1,5 +1,5 @@
 {
-  "name": "rspeedy-mininal-template",
+  "name": "rspeedy-minimal-template",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,12 +8,12 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/react": "0.111.2"
+    "@lynx-js/react": "0.112.3"
   },
   "devDependencies": {
     "@lynx-js/qrcode-rsbuild-plugin": "0.4.0",
-    "@lynx-js/react-rsbuild-plugin": "0.10.8",
-    "@lynx-js/rspeedy": "0.10.2",
+    "@lynx-js/react-rsbuild-plugin": "0.10.12",
+    "@lynx-js/rspeedy": "0.10.7",
     "@lynx-js/types": "3.3.0",
     "@types/react": "^18.3.20",
     "typescript": "~5.7.3"
