@@ -4,10 +4,10 @@ import { pluginQRCode } from '@lynx-js/qrcode-rsbuild-plugin'
 import { pluginReactLynx } from '@lynx-js/react-rsbuild-plugin'
 
 export default defineConfig({
-  // output: {
-  //   filenameHash: 'contenthash:8',
-  //   minify: false,
-  // },
+  output: {
+    filenameHash: 'contenthash:8',
+    inlineScripts: /background\./,
+  },
   plugins: [
     pluginQRCode({
       schema(url) {
@@ -15,6 +15,23 @@ export default defineConfig({
         return `${url}?fullscreen=true`
       },
     }),
-    pluginReactLynx(),
+    pluginReactLynx({
+      firstScreenSyncTiming: 'jsReady'
+    }),
   ],
+  performance: {
+    chunkSplit: {
+      strategy: 'split-by-experience',
+      override: {
+        cacheGroups: {
+          'lib-common': {
+            test: /Common/,
+            priority: 0,
+            name: 'lib-common',
+            enforce: true,
+          },
+        },
+      }
+    }
+  }
 })

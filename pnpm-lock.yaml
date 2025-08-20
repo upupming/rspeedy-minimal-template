@@ -9,18 +9,18 @@ importers:
   .:
     dependencies:
       '@lynx-js/react':
-        specifier: 0.112.3
-        version: 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20)
+        specifier: npm:@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca
+        version: '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20)'
     devDependencies:
       '@lynx-js/qrcode-rsbuild-plugin':
-        specifier: 0.4.0
-        version: 0.4.0
+        specifier: npm:@lynx-js/qrcode-rsbuild-plugin-canary@0.4.1-canary-20250820-f0d483ca
+        version: '@lynx-js/qrcode-rsbuild-plugin-canary@0.4.1-canary-20250820-f0d483ca'
       '@lynx-js/react-rsbuild-plugin':
-        specifier: 0.10.12
-        version: 0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(webpack@5.98.0)
+        specifier: npm:@lynx-js/react-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca
+        version: '@lynx-js/react-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(webpack@5.98.0)'
       '@lynx-js/rspeedy':
-        specifier: 0.10.7
-        version: 0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)
+        specifier: npm:@lynx-js/rspeedy-canary@0.10.8-canary-20250820-f0d483ca
+        version: '@lynx-js/rspeedy-canary@0.10.8-canary-20250820-f0d483ca(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)'
       '@lynx-js/types':
         specifier: 3.3.0
         version: 3.3.0
@@ -82,56 +82,31 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lynx-js/chunk-loading-webpack-plugin@0.3.0':
-    resolution: {integrity: sha512-otZBLgYR3FK1aLpKIuLjZugZRG1QeUchilvSEl5iLkZn9X6mYeURf+DtURtPEcXUyq7Qjn6IXAE0y98EdiiwdQ==}
+  '@lynx-js/chunk-loading-webpack-plugin-canary@0.3.0':
+    resolution: {integrity: sha512-Pacd8QsBpIcoU2mzxUQFiLUMwvU8hXva0GYPwWYPRK4nbaHdrvFmn+/YnmJCNfMzvwYymJk4K6qHN1VmH8dhtw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@rspack/core': ^1.3.10
 
-  '@lynx-js/css-extract-webpack-plugin@0.6.2':
-    resolution: {integrity: sha512-bxnC+snXCl1L29QcZFLBcVTzgSw2BGkMDD4xzJQPJgoGvHmQDEvEpFatQC8ykcMA3284q9HEfVQhICtOBQ7FWQ==}
+  '@lynx-js/css-extract-webpack-plugin-canary@0.6.2':
+    resolution: {integrity: sha512-iqxIyxANeNwO4+7fD1WznBZHgTE7/gTyZYM7GdNb0fSumv337HvonbzDQSr3sh8LFodLaJEkm1lHjdWQmUk6XQ==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@lynx-js/template-webpack-plugin': ^0.8.0
+      '@lynx-js/template-webpack-plugin': '*'
 
-  '@lynx-js/css-serializer@0.1.3':
-    resolution: {integrity: sha512-AngMqNr8qvGeejv68MjbVNiuYAjzMm3S/t6lrCbtRn8jwa8gVU0Std2mVCMDeIoWzfjjliyRQMd6AzGydOh8dg==}
+  '@lynx-js/css-serializer-canary@0.1.3':
+    resolution: {integrity: sha512-L+9MMKvCYFogVJSRocOi6VScLCm6XoyQBiFo+sBhGUvxBsn+iw9u4atI6/ZNLz2QXVG9a+qDi17TV6JgfDtVrA==}
 
-  '@lynx-js/qrcode-rsbuild-plugin@0.4.0':
-    resolution: {integrity: sha512-fabS4s+NLrpK2/HSU7QnSfTq8mCROneaJEf90m7VAFk8kYsOwUKoOcvHMcGkw/9jo0c08bq3Oxxnchs0/wa0rw==}
+  '@lynx-js/qrcode-rsbuild-plugin-canary@0.4.1-canary-20250820-f0d483ca':
+    resolution: {integrity: sha512-vmW/Ba5SiEuyI5dTKeZ7kHHK1shsX0nd7Ciymup9/LRLKqJ4lx/uJdLUD1F7jBGx1H1ag6d5uYHqQewo1geQfQ==}
     engines: {node: '>=18'}
 
-  '@lynx-js/react-alias-rsbuild-plugin@0.10.12':
-    resolution: {integrity: sha512-vxA2d0tEuQezENq1ys0xLB7U8PUr/XEKVGwwe9zZRww5DzmocY5OybkD5NtMJU7cQH8y8vdB5qhIbj1wS7Bwsw==}
+  '@lynx-js/react-alias-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca':
+    resolution: {integrity: sha512-QpFCNUf54hqtsfHEKpjm9h5W0J2UF5MSc/bMkSckmbw8UY0wJ8s9XQk53dbJJtiyNuhA1PZ+h4YQMFlL80/X8Q==}
     engines: {node: '>=18'}
 
-  '@lynx-js/react-refresh-webpack-plugin@0.3.4':
-    resolution: {integrity: sha512-R5hpuih6TAzxtKngrrg7i6MQUBeMMQWZWR31UMF9ld98wH1WnRrMeq0ZjkmYZhDhQQA2ViQDaHkOvOrtU4yjhg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@lynx-js/react-webpack-plugin': ^0.3.0 || ^0.4.0 || ^0.5.0 || ^0.6.0 || ^0.7.0
-
-  '@lynx-js/react-rsbuild-plugin@0.10.12':
-    resolution: {integrity: sha512-PS3ynpkY6H9NMrdKI+rjuc+u1nwTDXoLq1FEbw45LPmInWM7qfwrp+GuldeCRX1WBexyLcNXuizej2rwcDNg5w==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@lynx-js/react': ^0.103.0 || ^0.104.0 || ^0.105.0 || ^0.106.0 || ^0.107.0 || ^0.108.0 || ^0.109.0 || ^0.110.0 || ^0.111.0 || ^0.112.0
-    peerDependenciesMeta:
-      '@lynx-js/react':
-        optional: true
-
-  '@lynx-js/react-webpack-plugin@0.6.19':
-    resolution: {integrity: sha512-Yd4ruSdL+yL035orCag85QE7juIjuuPUNI5ZaaM40X58SqV9ECZoxwV/zK7I5Zi4jJCSG9ObN0jsCCS00Im4Mw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@lynx-js/react': ^0.103.0 || ^0.104.0 || ^0.105.0 || ^0.106.0 || ^0.107.0 || ^0.108.0 || ^0.109.0 || ^0.110.0 || ^0.111.0 || ^0.112.0
-      '@lynx-js/template-webpack-plugin': ^0.4.0 || ^0.5.0 || ^0.6.0 || ^0.7.0 || ^0.8.0
-    peerDependenciesMeta:
-      '@lynx-js/react':
-        optional: true
-
-  '@lynx-js/react@0.112.3':
-    resolution: {integrity: sha512-A8bGpRbzNiiB0oap1RqY2mHD2imsgq2brFYLBrRroVVuklQyp2DXbs/KHltLIIKazARNz4W/wO4z7OGZphoGBg==}
+  '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca':
+    resolution: {integrity: sha512-T72FNeDOkfBbXaQP4mYkRNBWLrugK6gXLeKN11whCGVTDAnRRIsLG3MPmjJq7I8luMC5EYJJtzxNq0KS+7osvQ==}
     peerDependencies:
       '@lynx-js/types': '*'
       '@types/react': ^18
@@ -139,8 +114,33 @@ packages:
       '@lynx-js/types':
         optional: true
 
-  '@lynx-js/rspeedy@0.10.7':
-    resolution: {integrity: sha512-13J2uHY7aUjjq71QSn1mBvjsBrNGIFoVf1qU4UwIQPsztj8jObfceeemG0xwNLLrz/WTDxdv8yCGTUV7qgpnvw==}
+  '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4':
+    resolution: {integrity: sha512-wYILvrNDXjN9LLSajW3BMWqzNP7QeHf5Mx1CBkImjiB4Lyutu/cY/b70wtC6zi9qy8JxEjpfoqgSejiAavGOjw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react-webpack-plugin': '*'
+
+  '@lynx-js/react-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca':
+    resolution: {integrity: sha512-kurNx2QI2Xy31mJ1jSi81nQh4G2lBUAiPOdZoUxAtALBmwhdVP37JKM3nm/Bt6TmHtavF2jqN7YBgpJAP/eZSQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react': '*'
+    peerDependenciesMeta:
+      '@lynx-js/react':
+        optional: true
+
+  '@lynx-js/react-webpack-plugin-canary@0.6.19':
+    resolution: {integrity: sha512-h2Q0+GEBTAmyarQvFDU+kHfhNXEsi4CdCzKyxOyQLfxH2jnXgEs8UtKeGQl4pfSSHFtf1YHPhMs6qfZD3zObrg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@lynx-js/react': '*'
+      '@lynx-js/template-webpack-plugin': '*'
+    peerDependenciesMeta:
+      '@lynx-js/react':
+        optional: true
+
+  '@lynx-js/rspeedy-canary@0.10.8-canary-20250820-f0d483ca':
+    resolution: {integrity: sha512-hL6GaNqF5qe8SkG0ekJFJl/xK3pZbWSZqmdtJDWWu2tixruRmJe02mVcwYJTWtAcF2tXFNRRMxrwaPqoaaQfog==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -149,35 +149,35 @@ packages:
       typescript:
         optional: true
 
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.1.2':
-    resolution: {integrity: sha512-zfVas0CHT423TgX4FRRcz5De0IOhOe3s9NSa4HmxUTy3o7A1DNQ0mqwCWxzWl6wSzD8aqwl6MVWyM/wGKko03w==}
+  '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.2':
+    resolution: {integrity: sha512-9p1p559ht4fAm874wmi6W32mbm23YQ0mCyXp/DNuSif9cy8fbDLWtoC5Qem3o0sg2vkRZeJ6X+jjUrcuPXXKyg==}
     engines: {node: '>=18'}
 
   '@lynx-js/tasm@0.0.5':
     resolution: {integrity: sha512-E5ZTtNQslv0zGMqtEo/GULHM0XiyvkuL4K8SxP8R9n0WnInppIiekIP5Rzvt+oex7Sg8ngtm/ToUDiZ0NQ9+Qg==}
 
-  '@lynx-js/template-webpack-plugin@0.8.4':
-    resolution: {integrity: sha512-Cgw/0dw6QEQNmrCL1QCUkaftMg5TrHF1rTk3J8b/RenNZLitbbp/prDx/pK7rfj19ixxdDvA9QP6c8bm4nTbMA==}
+  '@lynx-js/template-webpack-plugin-canary@0.8.4':
+    resolution: {integrity: sha512-Fxsr7+C3gk/2WIbPVsZr6E1aB+dTSzicfb3HU0eX6gnkn8RsLXb2LAvGV3ceVhrOoLw3KU7Rt1pSZDj1G8ZcNA==}
     engines: {node: '>=18'}
 
   '@lynx-js/types@3.3.0':
     resolution: {integrity: sha512-URUszZQBFGumpNDXm4FoLMMSSZAgH+NBvBOaERe8UWrnH0XB9Z8N2sAj28jfg57G+eZpRasbvu/ZR6NzFe5feQ==}
 
-  '@lynx-js/use-sync-external-store@1.5.0':
-    resolution: {integrity: sha512-iXwLiGUBgfWLozCIh3ICe07x534p9CVlFS3/iGEiFOce58MLX6/PbAvWcE8qEhYaOKiQNe9hqUnS2RbyCqoqGg==}
+  '@lynx-js/use-sync-external-store-canary@1.5.0':
+    resolution: {integrity: sha512-ZA4z/lRiaAebwW3EpWyJN3J0PG2LNYbf9BKG8BZp070ug1kdjoTsQVgXcX3uiN3emcqSlfl/4U4DyIt86DNhqA==}
     peerDependencies:
       '@lynx-js/react': '*'
 
-  '@lynx-js/webpack-dev-transport@0.2.0':
-    resolution: {integrity: sha512-RSy02FSoMsavEn2wna4khSJwT2uGW4XeLduKH8UDT3aCsBNM/rXndUyG6PbwMcywXCeyb8UofkhaQDtJvNJklA==}
+  '@lynx-js/webpack-dev-transport-canary@0.2.0':
+    resolution: {integrity: sha512-90uhIE1Lb1iIspGRHQJccD5In3j3QqZdxaRxezOe3LGEC5EFNpS5ZcZbTwVZP8L+wOVLpqtGIBYenxNG/qx0eQ==}
     engines: {node: '>=18'}
 
-  '@lynx-js/webpack-runtime-globals@0.0.5':
-    resolution: {integrity: sha512-fqQ9TQ70xHgDf2iLUxUr1PnBvqBkgz/Y4PHZd3Z/5wsa5JsPX86VGDbbj7wxwf3LgUSVORnidtqY6fcEfRuV1Q==}
+  '@lynx-js/webpack-runtime-globals-canary@0.0.5':
+    resolution: {integrity: sha512-CM7QonY7XHwNWw9skhEtLc8fuDQYr2zSjQKdRr52WIxAxEiiQhDnkKUWmVs2CYf6he6s3MlQ9B7E8yiybBM/bQ==}
     engines: {node: '>=18'}
 
-  '@lynx-js/websocket@0.0.4':
-    resolution: {integrity: sha512-yXuMiTALLNvkDz8hG+0KdkBodnyJDvyfr8bdIq6zMP9X8JAoBC/czc1HIhUgYEJ3Zee5F/vGKjNxcoSx2t1E6w==}
+  '@lynx-js/websocket-canary@0.0.4':
+    resolution: {integrity: sha512-Xv52CjHZ8OOftQBqZJtlT5r8sgBaD7FY7dhSLdrH7HfT9c6zgDHuL/SzIs+noIkINgCPmoZQkUBycojzWZ6nIQ==}
     engines: {node: '>=18'}
 
   '@module-federation/error-codes@0.17.1':
@@ -619,8 +619,8 @@ packages:
   axios@1.11.0:
     resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
 
-  background-only@0.0.1:
-    resolution: {integrity: sha512-YXR2zshAf3qs3jnpApQaDUG0x4L6YWpSZfLDhdeiCFxfp/n8YwfoAQ1hAigEF3VpXOMOJeZYFWtBbiFv/v2Qfg==}
+  background-only-canary@0.0.1:
+    resolution: {integrity: sha512-f1kw8BdNm1uZGVUf7+A2S3kFvS/8HrSNn+3knI49WiRZAfkDX4fljDC7cFR9IZ8TIRRZQKLFKQp20a9hjewQUQ==}
 
   base64id@2.0.0:
     resolution: {integrity: sha512-lGe34o6EHj9y3Kts9R4ZYs/Gr+6N7MCaMlIFA3F1R2O5/m7K06AxfSeO5530PEERE6/WyEg3lsuyw4GHlPZHog==}
@@ -1917,67 +1917,67 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lynx-js/chunk-loading-webpack-plugin@0.3.0(@rspack/core@1.4.11(@swc/helpers@0.5.17))':
+  '@lynx-js/chunk-loading-webpack-plugin-canary@0.3.0(@rspack/core@1.4.11(@swc/helpers@0.5.17))':
     dependencies:
-      '@lynx-js/webpack-runtime-globals': 0.0.5
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.5'
       '@rspack/core': 1.4.11(@swc/helpers@0.5.17)
 
-  '@lynx-js/css-extract-webpack-plugin@0.6.2(@lynx-js/template-webpack-plugin@0.8.4)(webpack@5.98.0)':
+  '@lynx-js/css-extract-webpack-plugin-canary@0.6.2(@lynx-js/template-webpack-plugin-canary@0.8.4)(webpack@5.98.0)':
     dependencies:
-      '@lynx-js/template-webpack-plugin': 0.8.4
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.8.4'
       mini-css-extract-plugin: 2.9.4(webpack@5.98.0)
     transitivePeerDependencies:
       - webpack
 
-  '@lynx-js/css-serializer@0.1.3':
+  '@lynx-js/css-serializer-canary@0.1.3':
     dependencies:
       css-tree: 3.1.0
 
-  '@lynx-js/qrcode-rsbuild-plugin@0.4.0': {}
+  '@lynx-js/qrcode-rsbuild-plugin-canary@0.4.1-canary-20250820-f0d483ca': {}
 
-  '@lynx-js/react-alias-rsbuild-plugin@0.10.12':
+  '@lynx-js/react-alias-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca':
     dependencies:
       unrs-resolver: 1.11.1
 
-  '@lynx-js/react-refresh-webpack-plugin@0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin@0.8.4))':
-    dependencies:
-      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin@0.8.4)
-
-  '@lynx-js/react-rsbuild-plugin@0.10.12(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(webpack@5.98.0)':
-    dependencies:
-      '@lynx-js/css-extract-webpack-plugin': 0.6.2(@lynx-js/template-webpack-plugin@0.8.4)(webpack@5.98.0)
-      '@lynx-js/react-alias-rsbuild-plugin': 0.10.12
-      '@lynx-js/react-refresh-webpack-plugin': 0.3.4(@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin@0.8.4))
-      '@lynx-js/react-webpack-plugin': 0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin@0.8.4)
-      '@lynx-js/runtime-wrapper-webpack-plugin': 0.1.2
-      '@lynx-js/template-webpack-plugin': 0.8.4
-      '@lynx-js/use-sync-external-store': 1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))
-      background-only: 0.0.1
-    optionalDependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20)
-    transitivePeerDependencies:
-      - webpack
-
-  '@lynx-js/react-webpack-plugin@0.6.19(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin@0.8.4)':
-    dependencies:
-      '@lynx-js/template-webpack-plugin': 0.8.4
-      '@lynx-js/webpack-runtime-globals': 0.0.5
-      tiny-invariant: 1.3.3
-    optionalDependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20)
-
-  '@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20)':
+  '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20)':
     dependencies:
       '@types/react': 18.3.20
       preact: '@hongzhiyuan/preact@10.24.0-00213bad'
     optionalDependencies:
       '@lynx-js/types': 3.3.0
 
-  '@lynx-js/rspeedy@0.10.7(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)':
+  '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4(@lynx-js/react-webpack-plugin-canary@0.6.19(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin-canary@0.8.4))':
     dependencies:
-      '@lynx-js/chunk-loading-webpack-plugin': 0.3.0(@rspack/core@1.4.11(@swc/helpers@0.5.17))
-      '@lynx-js/webpack-dev-transport': 0.2.0
-      '@lynx-js/websocket': 0.0.4
+      '@lynx-js/react-webpack-plugin': '@lynx-js/react-webpack-plugin-canary@0.6.19(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin-canary@0.8.4)'
+
+  '@lynx-js/react-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(webpack@5.98.0)':
+    dependencies:
+      '@lynx-js/css-extract-webpack-plugin': '@lynx-js/css-extract-webpack-plugin-canary@0.6.2(@lynx-js/template-webpack-plugin-canary@0.8.4)(webpack@5.98.0)'
+      '@lynx-js/react-alias-rsbuild-plugin': '@lynx-js/react-alias-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca'
+      '@lynx-js/react-refresh-webpack-plugin': '@lynx-js/react-refresh-webpack-plugin-canary@0.3.4(@lynx-js/react-webpack-plugin-canary@0.6.19(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin-canary@0.8.4))'
+      '@lynx-js/react-webpack-plugin': '@lynx-js/react-webpack-plugin-canary@0.6.19(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin-canary@0.8.4)'
+      '@lynx-js/runtime-wrapper-webpack-plugin': '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.2'
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.8.4'
+      '@lynx-js/use-sync-external-store': '@lynx-js/use-sync-external-store-canary@1.5.0(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))'
+      background-only: background-only-canary@0.0.1
+    optionalDependencies:
+      '@lynx-js/react': '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20)'
+    transitivePeerDependencies:
+      - webpack
+
+  '@lynx-js/react-webpack-plugin-canary@0.6.19(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))(@lynx-js/template-webpack-plugin-canary@0.8.4)':
+    dependencies:
+      '@lynx-js/template-webpack-plugin': '@lynx-js/template-webpack-plugin-canary@0.8.4'
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.5'
+      tiny-invariant: 1.3.3
+    optionalDependencies:
+      '@lynx-js/react': '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20)'
+
+  '@lynx-js/rspeedy-canary@0.10.8-canary-20250820-f0d483ca(@rspack/core@1.4.11(@swc/helpers@0.5.17))(typescript@5.7.3)(webpack@5.98.0)':
+    dependencies:
+      '@lynx-js/chunk-loading-webpack-plugin': '@lynx-js/chunk-loading-webpack-plugin-canary@0.3.0(@rspack/core@1.4.11(@swc/helpers@0.5.17))'
+      '@lynx-js/webpack-dev-transport': '@lynx-js/webpack-dev-transport-canary@0.2.0'
+      '@lynx-js/websocket': '@lynx-js/websocket-canary@0.0.4'
       '@rsbuild/core': 1.4.15
       '@rsbuild/plugin-css-minimizer': 1.0.3(@rsbuild/core@1.4.15)(webpack@5.98.0)
       '@rsdoctor/rspack-plugin': 1.2.2(@rsbuild/core@1.4.15)(@rspack/core@1.4.11(@swc/helpers@0.5.17))(webpack@5.98.0)
@@ -1997,17 +1997,17 @@ snapshots:
       - utf-8-validate
       - webpack
 
-  '@lynx-js/runtime-wrapper-webpack-plugin@0.1.2':
+  '@lynx-js/runtime-wrapper-webpack-plugin-canary@0.1.2':
     dependencies:
-      '@lynx-js/webpack-runtime-globals': 0.0.5
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.5'
 
   '@lynx-js/tasm@0.0.5': {}
 
-  '@lynx-js/template-webpack-plugin@0.8.4':
+  '@lynx-js/template-webpack-plugin-canary@0.8.4':
     dependencies:
-      '@lynx-js/css-serializer': 0.1.3
+      '@lynx-js/css-serializer': '@lynx-js/css-serializer-canary@0.1.3'
       '@lynx-js/tasm': 0.0.5
-      '@lynx-js/webpack-runtime-globals': 0.0.5
+      '@lynx-js/webpack-runtime-globals': '@lynx-js/webpack-runtime-globals-canary@0.0.5'
       '@rspack/lite-tapable': 1.0.1
       css-tree: 3.1.0
       object.groupby: 1.0.3
@@ -2016,15 +2016,15 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@lynx-js/use-sync-external-store@1.5.0(@lynx-js/react@0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20))':
+  '@lynx-js/use-sync-external-store-canary@1.5.0(@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20))':
     dependencies:
-      '@lynx-js/react': 0.112.3(@lynx-js/types@3.3.0)(@types/react@18.3.20)
+      '@lynx-js/react': '@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca(@lynx-js/types@3.3.0)(@types/react@18.3.20)'
 
-  '@lynx-js/webpack-dev-transport@0.2.0': {}
+  '@lynx-js/webpack-dev-transport-canary@0.2.0': {}
 
-  '@lynx-js/webpack-runtime-globals@0.0.5': {}
+  '@lynx-js/webpack-runtime-globals-canary@0.0.5': {}
 
-  '@lynx-js/websocket@0.0.4':
+  '@lynx-js/websocket-canary@0.0.4':
     dependencies:
       eventemitter3: 5.0.1
 
@@ -2562,7 +2562,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  background-only@0.0.1: {}
+  background-only-canary@0.0.1: {}
 
   base64id@2.0.0: {}
 

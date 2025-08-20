@@ -1,3 +1,8 @@
+import { Common } from './Common.jsx'
+
 export default () => {
-  return <text>Hello World</text>;
+  return <view>
+    <text>Hello World</text>
+    <Common />
+  </view>;
 }
