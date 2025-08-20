@@ -8,12 +8,12 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
-    "@lynx-js/react": "0.112.3"
+    "@lynx-js/react": "npm:@lynx-js/react-canary@0.112.4-canary-20250820-f0d483ca"
   },
   "devDependencies": {
-    "@lynx-js/qrcode-rsbuild-plugin": "0.4.0",
-    "@lynx-js/react-rsbuild-plugin": "0.10.12",
-    "@lynx-js/rspeedy": "0.10.7",
+    "@lynx-js/qrcode-rsbuild-plugin": "npm:@lynx-js/qrcode-rsbuild-plugin-canary@0.4.1-canary-20250820-f0d483ca",
+    "@lynx-js/react-rsbuild-plugin": "npm:@lynx-js/react-rsbuild-plugin-canary@0.10.13-canary-20250820-f0d483ca",
+    "@lynx-js/rspeedy": "npm:@lynx-js/rspeedy-canary@0.10.8-canary-20250820-f0d483ca",
     "@lynx-js/types": "3.3.0",
     "@types/react": "^18.3.20",
     "typescript": "~5.7.3"
