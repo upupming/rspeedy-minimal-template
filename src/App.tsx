@@ -4,6 +4,7 @@ import './App.css';
 import arrow from './assets/arrow.png';
 import lynxLogo from './assets/lynx-logo.png';
 import reactLynxLogo from './assets/react-logo.png';
+import Comp from './Comp.jsx';
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
@@ -20,6 +21,7 @@ export function App() {
   return (
     <view>
       <view className='Background' />
+      {__MAIN_THREAD__ && <Comp />}
       <view className='App'>
         <view className='Banner'>
           <view className='Logo' bindtap={onTap}>
