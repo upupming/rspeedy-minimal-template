@@ -1,9 +1,12 @@
-import { useCallback, useEffect, useState } from '@lynx-js/react';
+import { lazy, Suspense, useCallback, useEffect, useState } from '@lynx-js/react';
 
 import './App.css';
+import './common.css';
 import arrow from './assets/arrow.png';
 import lynxLogo from './assets/lynx-logo.png';
 import reactLynxLogo from './assets/react-logo.png';
+
+const Foo = lazy(() => import('./Foo.jsx'));
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
@@ -28,7 +31,10 @@ export function App() {
               : <image src={lynxLogo} className='Logo--lynx' />}
           </view>
           <text className='Title'>React</text>
-          <text className='Subtitle'>on Lynx</text>
+          <text className='Subtitle common'>on Lynx</text>
+          <Suspense fallback={<text>Loading...</text>}>
+            <Foo />
+          </Suspense>
         </view>
         <view className='Content'>
           <image src={arrow} className='Arrow' />
