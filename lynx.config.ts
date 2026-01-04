@@ -8,6 +8,11 @@ export default defineConfig({
   //   filenameHash: 'contenthash:8',
   //   minify: false,
   // },
+  source: {
+    define: {
+      'process.env.REACT_APP_LYNX_BUNDLE_URL': JSON.stringify(process.env.REACT_APP_LYNX_BUNDLE_URL),
+    }
+  },
   plugins: [
     pluginQRCode({
       schema(url) {
