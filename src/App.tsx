@@ -19,22 +19,25 @@ export function App() {
 
   return (
     <view>
-      <view className='Background' />
-      <view className='App'>
-        <view className='Banner'>
-          <view className='Logo' bindtap={onTap}>
-            {alterLogo
-              ? <image src={reactLynxLogo} className='Logo--react' />
-              : <image src={lynxLogo} className='Logo--lynx' />}
+      <view className="Background" />
+      <view className="App">
+        <view className="Banner">
+          <view className="Logo" bindtap={onTap}>
+            {alterLogo ? (
+              <image src={reactLynxLogo} className="Logo--react" />
+            ) : (
+              <image src={lynxLogo} className="Logo--lynx" />
+            )}
           </view>
-          <text className='Title'>React</text>
-          <text className='Subtitle'>on Lynx</text>
+          <text className="Title">React</text>
+          <text className="Subtitle">on Lynx</text>
         </view>
-        <view className='Content'>
-          <image src={arrow} className='Arrow' />
-          <text className='Description'>Tap the logo and have fun!</text>
-          <text className='Hint'>
-            Edit<text
+        <view className="Content">
+          <image src={arrow} className="Arrow" />
+          <text className="Description">Tap the logo and have fun!</text>
+          <text className="Hint">
+            Edit
+            <text
               style={{
                 fontStyle: 'italic',
                 color: 'rgba(255, 255, 255, 0.85)',
@@ -44,6 +47,7 @@ export function App() {
             </text>
             to see updates!
           </text>
+          <xxx xxx="xxx" />
         </view>
         <view style={{ flex: 1 }}></view>
       </view>
