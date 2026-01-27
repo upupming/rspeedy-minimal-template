@@ -34,6 +34,8 @@ export function App() {
         </view>
         <view className="Content">
           <image src={arrow} className="Arrow" />
+          <button xxx={'xxx'}>Tap me</button>
+          {/* <xxx xxx="xxx" /> */}
           <text className="Description">Tap the logo and have fun!</text>
           <text className="Hint">
             Edit
@@ -47,7 +49,8 @@ export function App() {
             </text>
             to see updates!
           </text>
-          <xxx xxx="xxx" />
+          {/* <xxx xxx="xxx" /> */}
+          {/* <input xxxx="xxxx" /> */}
         </view>
         <view style={{ flex: 1 }}></view>
       </view>
