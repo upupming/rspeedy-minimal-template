@@ -1,5 +1,5 @@
 import '@lynx-js/react/experimental/lazy/import';
-import { root } from '@lynx-js/react'
+import { root, useState } from '@lynx-js/react'
 
 import { App } from './App.js'
 
@@ -204,7 +204,17 @@ import { __root } from '@lynx-js/react/internal'
   }
 }
 
-root.render(<App />)
+const AAA = () => {
+  const [id, setId] = useState('123')
+  return <view bindtap={() => {
+    console.log('tap')
+    setId('456')
+  }}>
+    <App id={id}/>
+  </view>
+}
+
+root.render(<AAA/>)
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
