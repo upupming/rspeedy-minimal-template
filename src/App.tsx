@@ -5,6 +5,8 @@ import arrow from './assets/arrow.png';
 import lynxLogo from './assets/lynx-logo.png';
 import reactLynxLogo from './assets/react-logo.png';
 
+const Comp = () => <text>Hello, ReactLynx</text>;
+
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
 
@@ -48,6 +50,8 @@ export function App() {
             to see updates!
           </text>
         </view>
+        <Comp />
+        <list key={alterLogo ? 'react' : 'lynx'}></list>
         <view style={{ flex: 1 }}></view>
       </view>
     </view>
